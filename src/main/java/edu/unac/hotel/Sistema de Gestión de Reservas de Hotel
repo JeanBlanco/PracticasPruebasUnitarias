@@ -1,0 +1,16 @@
+Descripción:
+
+Implementa un sistema para gestionar las reservas de habitaciones en un hotel.
+El hotel tiene una lista de habitaciones, cada una con un número y un tipo (Sencilla, Doble, Suite).
+Los clientes pueden reservar habitaciones indicando el tipo y las fechas de inicio y fin de la reserva.
+
+El sistema debe permitir:
+-Agregar nuevas habitaciones al hotel.
+-Reservar una habitación de un tipo específico si está disponible para las fechas indicadas.
+-Cancelar una reserva.
+-Obtener el total de reservas realizadas.
+
+Requisitos:
+-Si no hay habitaciones disponibles del tipo solicitado, el sistema debe lanzar una excepción.
+-Una reserva no puede ser realizada si se solapa con otra reserva existente para la misma habitación.
+-Debe ser posible cancelar una reserva utilizando un identificador único de reserva.

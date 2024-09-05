@@ -1,0 +1,20 @@
+Debes implementar un sistema de lotería que permita a los usuarios comprar
+boletos con números específicos y realizar sorteos para determinar un ganador.
+El sistema debe incluir las siguientes funcionalidades y restricciones:
+
+Ticket:
+-Un boleto debe tener un número único.
+-Un boleto debe tener un estado que indica si ha sido comprado o no.
+
+Lottery:
+-La lotería debe tener una lista de boletos.
+-Debe ser posible agregar boletos a la lista de la lotería.
+-Un usuario debe poder comprar un boleto, especificando el número del boleto que desea comprar.
+-Si se intenta comprar un boleto que ya ha sido vendido, se debe lanzar una excepción personalizada TicketAlreadySoldException.
+-Si se intenta comprar un boleto que no existe en la lista, se debe lanzar una excepción personalizada TicketNotFoundException.
+-Debe ser posible realizar un sorteo para seleccionar un boleto ganador.
+    Para seleccionar el boleto ganador, se debe generar un número aleatorio entre la cantidad de boletos disponibles.
+    -Si el boleto ganador ha sido vendido, se debe retornar dicho boleto.
+    -Si el boleto ganador no ha sido vendido, se debe lanzar una excepción personalizada TicketNotSoldException
+    indicando el número del boleto ganador que no ha sido vendido.
+    -Si no hay boletos disponibles en la lista, se debe lanzar una excepción personalizada NoTicketsAvailableException.
